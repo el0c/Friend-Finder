@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Assignment for UT Coding Bootcamp">
+    <meta name="author" content="Cole Smith">
+    <title>Friend Finder</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Ubuntu" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="card mb-5" id="survey">
+            <h2 class="card-header">What do you like?</h2>
+
+            <form class="card-block">
+                <div class="form-group row py-3">
+                    <label for="name" class="col-12 col-md-3 col-form-label"><strong>Name</strong></label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control form-control-lg" id="name" required>
+                        <div class="form-control-feedback"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row py-3">
+                    <label for="name" class="col-12 col-md-3 col-form-label"><strong>Photo URL</strong></label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control form-control-lg" id="photo_url" required>
+                        <div class="form-control-feedback"></div>
+                    </div>
+                </div>
+
+                <div class="form-group py-3">
+                    <label for="q0" class="col-form-label"><strong>Question 1.</strong> I like a daredevil.</label>
+                        
+                    <select class="form-control form-control-lg" id="q0">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+
+                <div class="form-group py-3">
+                    <label for="q1" class="col-form-label"><strong>Question 2.</strong> I like a cat-lover.</label>
+                        
+                    <select class="form-control form-control-lg" id="q1">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q2" class="col-form-label"><strong>Question 3.</strong> I like a quirky person.</label>
+                        
+                    <select class="form-control form-control-lg" id="q2">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+
+                <div class="form-group py-3">
+                    <label for="q3" class="col-form-label"><strong>Question 4.</strong> I like someone who isn't afraid to cry.</label>
+                        
+                    <select class="form-control form-control-lg" id="q3">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q4" class="col-form-label"><strong>Question 5.</strong> I like someone with an eclectic collection.</label>
+                        
+                    <select class="form-control form-control-lg" id="q4">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q5" class="col-form-label"><strong>Question 6.</strong> I like a gift-giver.</label>
+                            
+                    <select class="form-control form-control-lg" id="q5">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q6" class="col-form-label"><strong>Question 7.</strong> I like someone who is disheveled.</label>
+                        
+                    <select class="form-control form-control-lg" id="q6">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q7" class="col-form-label"><strong>Question 8.</strong> I like someone who believes in sharing fate.</label>
+                        
+                    <select class="form-control form-control-lg" id="q7">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q8" class="col-form-label"><strong>Question 9.</strong> I like someone who believes in sharing food.</label>
+                            
+                    <select class="form-control form-control-lg" id="q8">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="form-group py-3">
+                    <label for="q9" class="col-form-label"><strong>Question 10.</strong> I like someone who can say I love you.</label>
+                        
+                    <select class="form-control form-control-lg" id="q9">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning btn-lg mt-4 mb-3 px-5 pt-3" id="button_submit"><i class="fa fa-user-plus mr-3" aria-hidden="true"></i>Find my BFF!</button>
+                </div>
+            </form>
+        </div>
+    
+        <div class="modal fade" id="modal_response">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Hi, <span id="my_name"></span>!</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Your new BFF is <strong><span id="friend_name"></span></strong>.</p>
+                        <p>Call now at <strong><span id="friend_number"></span></strong>!</p>
+                        <img class="img-thumbnail my-3" id="friend_photo" src=""></img>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <footer>
+            <div class="float-left">
+                <a href="/api/friends">API Friends</a>
+            </div>
+            <div class="float-right">
+                    <span><i class="fa fa-copyright mr-2" aria-hidden="true"></i>Cole Smith</span>
+            </div>
+        </footer>
+    </div>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
